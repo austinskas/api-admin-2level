@@ -1,0 +1,83 @@
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width:100%;
+
+
+    .nav-bar{
+      position: relative;
+        height: $nav-height;
+        background: $default-bg;
+        &--left{
+            width:$nav-left-width;
+            float: left;
+            text-align: center;
+
+
+        }
+        &--right{
+           display:-webkit-box;
+           display:-ms-flexbox;
+           display:flex;
+           -webkit-box-pack: justify;
+           -ms-flex-pack:justify;
+           justify-content:space-between;
+            margin-left: $nav-left-width;
+            min-height: $nav-height;
+
+
+        }
+
+        &__lists{
+            list-style: none;
+            margin:15px;
+
+            &--left{
+            background:#3f51b5;
+            margin-right: 0px;
+
+
+            }
+            &--right{
+                float: right;
+                display: inherit;
+                padding-top: 10px;
+                background:#3f51b5;
+                margin-right: 80px;
+                margin-top:5px;
+                        }
+            &__link{
+
+            }
+        }
+    }
+}
+
+.nav-bar__lists__link {
+  margin: 0px;
+}
+
+.nav-bar__lists {
+  margin-top: 10px;
+}
+
+.svg-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 0px;
+}
+
+.search {
+  background: red;
+}
+
+.topbar .nav-bar__lists--left {
+  margin-right: 850px;
+}
+
+.lists {
+margin:31px;
+background: green;
+}

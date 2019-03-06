@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    {{>navbar}}
+    {{>sidenav}}
+    <div class="section-container">
+        {{body}}
+    </div>
+    {{>body}}
+    {{#is basename 'index'}}
+        {{>footer}}
+    {{/is}}
+    <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div>
+</body>
+
+</html>
