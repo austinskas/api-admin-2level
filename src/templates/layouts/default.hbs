@@ -4,15 +4,24 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="assets/css/app.css">
+
+    {{#is default.lang 'lt'}}
+              <link rel="stylesheet" href="../assets/css/app.css">
+          {{else}}
+              <link rel="stylesheet" href="assets/css/app.css">
+          {{/is}}
+
 </head>
 
 <body>
     {{>navbar}}
     {{>sidenav}}
+
     <div class="section-container">
+        {{>title}}
         {{body}}
     </div>
+    
     {{>body}}
     {{#is basename 'index'}}
         {{>footer}}

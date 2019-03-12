@@ -64,9 +64,10 @@
 }
 
 .svg-icon {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   margin-top: 0px;
+  padding: 5px;
 }
 
 .search {
@@ -74,10 +75,24 @@
 }
 
 .topbar .nav-bar__lists--left {
-  margin-right: 850px;
+  margin-right: 783px;
+  height:24px;
+
 }
 
 .lists {
 margin:31px;
 background: green;
+}
+
+.svg-meniu {
+    height: 48px;
+    width: 48px;
+    margin-top: 6px;
+}
+
+
+.svg-search {
+    height: 24px;
+    width: 24px;
 }

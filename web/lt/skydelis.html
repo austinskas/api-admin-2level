@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title></title>
 
-              <link rel="stylesheet" href="assets/css/app.css">
+              <link rel="stylesheet" href="../assets/css/app.css">
 
 </head>
 
@@ -165,7 +165,190 @@
 
     <div class="section-container">
         Weclome!
-        
+        <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-xl-3">
+      <div class="boxes">
+        <div class="row">
+          <div class="col-4">
+            <div class="circle circle--success">
+                <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                </svg>
+            </div>
+          </div>
+          <div class="col-8 v-align">
+            <h5>14,564</h5>
+            <p>Lankytojai Šiandien</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-xl-3">
+      <div class="boxes">
+        <div class="row">
+          <div class="col-4">
+            <div class="circle circle--primary">
+                <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#more"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="col-8 v-align">
+            <h5>32,564</h5>
+            <p>Bendrai</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-xl-3">
+      <div class="boxes">
+        <div class="row">
+          <div class="col-4">
+            <div class="circle circle--danger">
+                <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#important"></use>
+                </svg>
+            </div>
+          </div>
+          <div class="col-8 v-align">
+            <h5>280</h5>
+        <p>Šiandienos Pardavimai</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-6 col-xl-3">
+      <div class="boxes">
+        <div class="row">
+          <div class="col-4">
+            <div class="circle circle--secondary">
+                <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#important"></use>
+                </svg>
+            </div>
+          </div>
+          <div class="col-8 v-align">
+            <h5>0.3%</h5>
+        <p>Konversija</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+
+<div class="row">
+        <div class="col-xl-4">
+            <div class="boxes">
+                <h6 class="boxes__title">Yearl sales report</h6>
+                <canvas id="myChart"></canvas>
+                </div>
+            </div>
+                <div class="col-xl-4">
+            <div class="boxes">
+                <h6 class="boxes__title">Total revenue</h6>
+                 <canvas id="myChart1"></canvas>
+                </div>
+                </div>
+
+
+        <div class="col-xl-4">
+            <div class="boxes">
+                <h6 class="boxes__title">Total revenue</h6>
+                 <canvas id="myChart3"></canvas>
+
+            </div>
+        </div>
+        </div>
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="boxes">
+                <h6 class="boxes__title">Latest projects</h6>
+                <p class="boxes__subheading">Your awesome text goes here.</p>
+                <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Project name</th>
+      <th scope="col">Start date</th>
+      <th scope="col">Due date</th>
+      <th scope="col">Status</th>
+      <th scope="col">Assign</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Miniton Admin v1</td>
+      <td>Miniton Frontend v1</td>
+      <td>Miniton Aadmin v1.1</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>01/01/2018</td>
+     <td>01/01/2018</td>
+     <td>01/01/2018</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td><td>01/01/2018</td></td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="boxes boxes--flex">
+                        <img class="boxes__image img-fluid" src="../assets/image/user.jpg" alt="user picture">
+                        <div class="boxes__user-info v-align">
+                        <h6> Kempiniukas </h6>
+                        <p> kempiniukas@tv3.lt</p>
+                        <p class="user__role user-role--user"> </p>
+                        <p>Vartotojas</p>
+                        <h6 class="boxes__title"></h6>
+                        <p class="boxes__info"></p>
+                        <p class="boxes__roles"></p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="boxes boxes--flex">
+                        <img class="boxes__image" src="../assets/image/user1.jpg" alt="user picture">
+                        <div class="boxes__user-info v-align">
+                        <h6> chuck norris </h6>
+                        <p> chuck norris@tv3.lt</p>
+                        <p class="user__role user-role--user"> </p>
+                        <p>Vartotojas</p>
+                        <h6 class="boxes__title"></h6>
+                        <p class="boxes__info"></p>
+                        <p class="boxes__roles"></p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="boxes boxes--flex">
+                        <img class="boxes__image" src="../assets/image/user2.jpg" alt="user picture">
+                        <div class="boxes__use-info v-align">
+                        <h6> Spiderman </h6>
+                        <p> spiderman@tv3.lt </p>
+                        <p class="user__role user-role--user"></p>
+                        <p>Vartotojas</p>
+                        <h6 class="boxes__title"></h6>
+                        <p class="boxes__info"></p>
+                        <p class="boxes__roles"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     </div>
     

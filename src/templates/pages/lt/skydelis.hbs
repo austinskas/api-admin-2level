@@ -12,7 +12,7 @@
           </div>
           <div class="col-8 v-align">
             <h5>14,564</h5>
-            <p>{{dashboard.stats.conversion}}</p>
+            <p>{{dashboard.stats.visits}}</p>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@
           </div>
           <div class="col-8 v-align">
             <h5>32,564</h5>
-            <p>Total Revenue</p>
+            <p>{{dashboard.stats.revenue}}</p>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@
           </div>
           <div class="col-8 v-align">
             <h5>280</h5>
-            <p>Today's sales</p>
+        <p>{{dashboard.stats.sales}}</p>
           </div>
         </div>
       </div>
@@ -65,36 +65,42 @@
           </div>
           <div class="col-8 v-align">
             <h5>0.3%</h5>
-            <p>Conversion</p>
+        <p>{{dashboard.stats.conversion}}</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+{{#is default.lang 'lt'}}
+<script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+{{else}}
+<script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
+{{/is}}
 
 <div class="row">
         <div class="col-xl-4">
             <div class="boxes">
                 <h6 class="boxes__title">Yearl sales report</h6>
-                 <canvas id="myChart"></canvas>
-
-
+                <canvas id="myChart"></canvas>
+                </div>
             </div>
-        </div>
+                <div class="col-xl-4">
+            <div class="boxes">
+                <h6 class="boxes__title">Total revenue</h6>
+                 <canvas id="myChart1"></canvas>
+                </div>
+                </div>
+
+
         <div class="col-xl-4">
             <div class="boxes">
                 <h6 class="boxes__title">Total revenue</h6>
-                <canvas id="myChart1"></canvas>
+                 <canvas id="myChart3"></canvas>
+
             </div>
         </div>
-        <div class="col-xl-4">
-            <div class="boxes">
-                <h6 class="boxes__title">Total revenue</h6>
-                <canvas id="myChart3"></canvas>
-            </div>
         </div>
-    </div>
     <div class="row">
         <div class="col-xl-8">
             <div class="boxes">
@@ -139,11 +145,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="boxes boxes--flex">
-                        <img class="boxes__image img-fluid" src="assets/image/user.jpg" alt="user picture">
+                        <img class="boxes__image img-fluid" src="../assets/image/user.jpg" alt="user picture">
                         <div class="boxes__user-info v-align">
                         <h6> Kempiniukas </h6>
                         <p> kempiniukas@tv3.lt</p>
-                        <p class="user__role user-role--user">User </p>
+                        <p class="user__role user-role--user"> </p>
+                        <p>{{dashboard.stats.user}}</p>
                         <h6 class="boxes__title"></h6>
                         <p class="boxes__info"></p>
                         <p class="boxes__roles"></p>
@@ -151,11 +158,12 @@
                 </div>
                 <div class="col-12">
                     <div class="boxes boxes--flex">
-                        <img class="boxes__image" src="assets/image/user1.jpg" alt="user picture">
+                        <img class="boxes__image" src="../assets/image/user1.jpg" alt="user picture">
                         <div class="boxes__user-info v-align">
                         <h6> chuck norris </h6>
                         <p> chuck norris@tv3.lt</p>
-                        <p class="user__role user-role--user">User </p>
+                        <p class="user__role user-role--user"> </p>
+                        <p>{{dashboard.stats.user}}</p>
                         <h6 class="boxes__title"></h6>
                         <p class="boxes__info"></p>
                         <p class="boxes__roles"></p>
@@ -163,11 +171,12 @@
                 </div>
                 <div class="col-12">
                     <div class="boxes boxes--flex">
-                        <img class="boxes__image" src="assets/image/user2.jpg" alt="user picture">
+                        <img class="boxes__image" src="../assets/image/user2.jpg" alt="user picture">
                         <div class="boxes__use-info v-align">
                         <h6> Spiderman </h6>
                         <p> spiderman@tv3.lt </p>
-                        <p class="user__role user-role--user"> User </p>
+                        <p class="user__role user-role--user"></p>
+                        <p>{{dashboard.stats.user}}</p>
                         <h6 class="boxes__title"></h6>
                         <p class="boxes__info"></p>
                         <p class="boxes__roles"></p>

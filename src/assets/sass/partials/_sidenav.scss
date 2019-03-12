@@ -13,6 +13,13 @@
         &__list {
             padding: 12px 20px;
             position: relative;
+            border-left: 3px solid #fff;
+            &:hover{
+                a {
+                    color: $default-bg;
+                }
+            }
+
             a {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -21,15 +28,19 @@
                 -ms-flex-align: center;
                 align-items: center;
 
-                svg {}
+                svg {
+
+                }
             }
 
             &:after {
                 @include arrow($rotate:-45deg);
             }
                 &.active {
+                    border-color: $default-bg;
                     a {
-                        color:red;
+                        background:$bg-color;
+
                     }
                 }
             }
